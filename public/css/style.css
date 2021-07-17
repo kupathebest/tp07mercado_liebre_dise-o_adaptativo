@@ -25,6 +25,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* header */
+
 .home header {
     background-color: #EAC926;
     width: 100%;
@@ -42,6 +44,19 @@ body {
 
 .home header div.search{
     text-align: left;
+    padding: 5px;
+}
+
+.home header div input{
+    padding: 10px;
+    height: 30px;
+}
+
+.home header div.search i{
+    background-color: white;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
 }
 
 .home header div h3 {
@@ -75,6 +90,8 @@ body {
     margin-top: 20px;
 }
 
+/* main */
+
 .home main{
     width: 90%;
     background-color: #ebebeb;
@@ -89,6 +106,7 @@ body {
 .home main h2{
     font-size: 24px;
     margin-bottom: 10px;
+    color: #666;
 }
 
 .home main article img {
@@ -104,17 +122,52 @@ body {
 }
 
 .home main section article section{
-    display: none;
+    text-align: left;
 }
 
-.home main article h4{
-    color: grey;
+.home main article img {
+    width: 100%;
+}
+
+.home main section article section{
+    border-top: 1px solid #ebebeb;
     margin: 15px;
 }
 
+.home main section article section div{
+    display: inline-block;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    border-radius: 50%;
+}
+
+.home main section article section div i{
+    font-size: 25px;
+    padding: 15px;
+}
+
+.home main article section span {
+    display: block;
+    font-size: 18px;;
+}
+
+.home main article section p{
+    color: #39b54a;
+    font-size: 16px;
+}
+
+.home main article h4{
+    color: #666;
+    margin: 15px;
+    text-align: left;
+    display: none;
+}
+
+/* footer */
+
 .home footer {
     text-align: center;
-    background-color: #ebebeb;
+    background-color: white;
 }
 
 .home footer section i{
@@ -139,6 +192,8 @@ body {
 
 @media (min-width: 361px) {
 
+    /* header */
+
     .home header nav ul{
         display: block
     }
@@ -146,6 +201,8 @@ body {
     .home header div div.burger-menu {
         display: none;
     }
+
+    /* main */
 
     .home main {
         width: 100%;
@@ -168,32 +225,8 @@ body {
         margin: 5px;
     }
 
-    .home main section article section{
+    .home main article h4{
         display: block;
-        border-top: 1px solid #ebebeb;
-        margin: 15px;
-    }
-    
-    .home main section article section div{
-        display: inline-block;
-        border: 1px solid #39b54a;
-        color: #39b54a;
-        border-radius: 50%;
-    }
-    
-    .home main section article section div i{
-        font-size: 25px;
-        padding: 15px;
-    }
-    
-    .home main article section span {
-        display: block;
-        font-size: 18px;;
-    }
-    
-    .home main article section p{
-        color: #39b54a;
-        font-size: 16px;
     }
 }
 
